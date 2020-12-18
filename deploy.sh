@@ -29,4 +29,6 @@ fi
 echo 'Copying to docs';
 cp -r digitial-garden-builder/client/out docs
 echo 'Copied to docs';
+git add .
+git commit -m "Build garden"
 
