@@ -1,2 +1,2 @@
-cd digitial-garden-builder/client/docs
+cd digitial-garden-builder/client/out
 npx serve -l 2999
