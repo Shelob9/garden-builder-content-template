@@ -32,3 +32,6 @@ echo 'Copied to docs';
 git add .
 git commit -m "Build garden"
 
+git push
+
+
