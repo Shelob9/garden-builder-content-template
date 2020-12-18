@@ -21,4 +21,4 @@ cp client.env digitial-garden-builder/client/.env
 ##
 cd digitial-garden-builder 
 yarn
-yarn client build
+yarn grow
