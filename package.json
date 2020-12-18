@@ -4,11 +4,14 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"build": "node index.js",
 		"start": "cd docs && serve -l 2999"
 	},
 	"author": "Josh Pollock",
 	"license": "MIT",
 	"dependencies": {
-		"serve": "^11.3.2"
+		"@digital-garden-builder/client": "^0.0.5",
+		"serve": "^11.3.2",
+		"shelljs": "^0.8.4"
 	}
 }
