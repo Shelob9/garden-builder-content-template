@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "node index.js",
-		"start": "cd docs && serve -l 2999"
+		"start": "cd docs && serve -l 2999",
+		"export": "yarn -v"
 	},
 	"author": "Josh Pollock",
 	"license": "MIT",
