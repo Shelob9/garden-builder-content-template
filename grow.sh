@@ -15,7 +15,7 @@ FILE=digitial-garden-builder/client/.env
 if test -f "$FILE"; then
     rm digitial-garden-builder/client/.env
 fi
-
+cp garden.json garden.json
 cp client.env digitial-garden-builder/client/.env
 
 ##

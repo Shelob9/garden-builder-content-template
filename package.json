@@ -1,11 +1,14 @@
 {
-  "name": "garden-builder-content-template",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Josh Pollock",
-  "license": "MIT"
+	"name": "garden-builder-content-template",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "cd docs && serve -l 2999"
+	},
+	"author": "Josh Pollock",
+	"license": "MIT",
+	"dependencies": {
+		"serve": "^11.3.2"
+	}
 }
