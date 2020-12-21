@@ -1171,10 +1171,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@digital-garden-builder/client@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@digital-garden-builder/client/-/client-0.0.5.tgz#bc9b84752f39d2d5b5d83da956745e007126b02b"
-  integrity sha512-8faLd7nBZdZXXwBCs/ElG0EGOuNGR2MyTL0PHdqFRSIEWI4sHWFDcXtbhenF4ODkfjUUZjCt5P/dC8BMgawTOA==
+"@digital-garden-builder/client@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@digital-garden-builder/client/-/client-0.0.7.tgz#092725759ef229effe3ce1405e1bb32220c5af6e"
+  integrity sha512-hg+UqxB4rdR88aYrurvhmFmvauHjUMfslJg7ewuSUFNpDa0SQW7BFxX+7BeuAQa5flP3lHmWDS1vXJbQUDJdOg==
   dependencies:
     "@adobe/react-spectrum" "^3.6.0"
     "@octokit/auth-oauth-app" "^3.0.7"

@@ -11,7 +11,7 @@
 	"author": "Josh Pollock",
 	"license": "MIT",
 	"dependencies": {
-		"@digital-garden-builder/client": "^0.0.5",
+		"@digital-garden-builder/client": "0.0.7",
 		"serve": "^11.3.2",
 		"shelljs": "^0.8.4"
 	}
