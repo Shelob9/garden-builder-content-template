@@ -1,5 +1,11 @@
 var shell = require('shelljs');
  
+function git(cmd,errorMessage) {
+        if (shell.exec(cmd).code !== 0) {
+                shell.echo(errorMessage);
+                shell.exit(1);
+            }     
+}
 (async () => {
     /** */
     if (!shell.which('git')) {
@@ -9,11 +15,12 @@ var shell = require('shelljs');
         //** Install Garden Builder */
         if (shell.test('-d', 'digitial-garden-builder')) {
             shell.rm('-rf', 'digitial-garden-builder');
-        }
-        if (shell.exec('git clone --depth 1 git@github.com:Shelob9/digitial-garden-builder.git').code !== 0) {
-            shell.echo('Error: Git checkout failed');
-            shell.exit(1);
-        }
+            }
+            git(
+                    'git clone --depth 1 git@github.com:Shelob9/digitial-garden-builder.git',
+                    'Error: Git checkout failed'
+            )
+        
 
         /** Create Garden HTML */
         shell.echo( '!Making HTML and such out of the Garden!')
@@ -24,6 +31,25 @@ var shell = require('shelljs');
         shell.exec('cd digitial-garden-builder/client && yarn export')
         /** Copy out dir */
         shell.echo( '!Copying to output directory!')
-        shell.cp( '-R', 'digitial-garden-builder/client/out', 'docs')
+        shell.cp('-R', 'digitial-garden-builder/client/out', 'docs');
+    /** Switch to gh-pages branch, commit and push */
+            git(
+                'git checkout gh-pages',
+                'Error: Checking out gh-pages branch'
+            )
+            git(
+                'git add docs',
+                'Error: Adding build to git commit'
+            )
+            git(
+                `git commit -m 'Deploy build.`,
+                'Error: committing build'
+            )
+            git(
+                'git push -u origin gh-pages',
+                'Error: push failed'
+        )
+            
+
     }
 })()
