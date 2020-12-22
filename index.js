@@ -42,7 +42,7 @@ function git(cmd,errorMessage) {
                 'Error: Adding build to git commit'
             )
             git(
-                `git commit -m 'Deploy build.`,
+                'git commit -m "Commit HTML"',
                 'Error: committing build'
             )
             git(
