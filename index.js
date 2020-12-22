@@ -24,6 +24,6 @@ var shell = require('shelljs');
         shell.exec('cd digitial-garden-builder/client && yarn export')
         /** Copy out dir */
         shell.echo( '!Copying to output directory!')
-        shell.cp( '-R', 'digitial-garden-builder/client/out', 'out')
+        shell.cp( '-R', 'digitial-garden-builder/client/out', 'docs')
     }
 })()
