@@ -42,10 +42,15 @@ function html() {
         /** Copy out dir */
         shell.echo( '!Copying to output directory!')
         shell.cp('-R', 'digitial-garden-builder/client/out', 'docs');
-        /** Switch to gh-pages branch, commit and push */
+            /** Switch to gh-pages branch, commit and push */
             git(
                 'git checkout gh-pages',
                 'Error: Checking out gh-pages branch'
+            )
+            git(
+                //Add all to commit
+                'git add .',
+                'Error: adding build'
             )
             git(
                 //-a adds all to commit
