@@ -32,17 +32,14 @@ function git(cmd,errorMessage) {
         /** Copy out dir */
         shell.echo( '!Copying to output directory!')
         shell.cp('-R', 'digitial-garden-builder/client/out', 'docs');
-    /** Switch to gh-pages branch, commit and push */
+        /** Switch to gh-pages branch, commit and push */
             git(
                 'git checkout gh-pages',
                 'Error: Checking out gh-pages branch'
             )
             git(
-                'git add docs',
-                'Error: Adding build to git commit'
-            )
-            git(
-                'git commit -m "Commit HTML"',
+                //-a adds all to commit
+                'git commit -am "Commit HTML"',
                 'Error: committing build'
             )
             git(
