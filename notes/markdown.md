@@ -5,6 +5,5 @@ slug: markdown
 
 Please put stuff about markdown here.
 
-## Link
+## Headings
 
-- [[one]]
