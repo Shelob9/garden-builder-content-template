@@ -2,19 +2,15 @@
 	"name": "garden-builder-content-template",
 	"version": "0.0.1",
 	"description": "",
-	"main": "bin/index.js",
 	"scripts": {
-		"build": "node index.js",
-		"start": "cd docs && serve -l 2999",
-		"export": "yarn -v"
+		"start": "cd docs && serve -l 2999"
 	},
 	"author": "Josh Pollock",
 	"license": "MIT",
 	"dependencies": {
-		"@digital-garden-builder/builder": "0.0.11",
-		"shelljs": "^0.8.4"
+		"@digital-garden-builder/builder": "0.0.11"
 	},
-	"bin": {
-		"hi": "./bin/index.js"
+	"devDependencies": {
+		"serve": "^11.3.2"
 	}
 }
