@@ -1,10 +1,9 @@
 var shell = require('shelljs');
-
 const {
     deploy,
     html,
     install
-} = require('./bin/builder');
+} = require("@digital-garden-builder/builder");
 (async () => {
     /** */
     if (!shell.which('git')) {
