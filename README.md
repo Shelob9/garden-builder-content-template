@@ -1,10 +1,14 @@
 # Content Template For Digital Garden Builder
 
-## Bash Scripts
+This is template of the data store used by [Digital Garden Builder](http://digitalgardenbuilder.app/), which uses Github to store data. Each digital garden starts from this template.
 
-- Create garden
-  - `bash grow.sh`
-- Serve Garden
-  - `bash serve.sh`
-- Deploy Garden
-  - `bash deploy.sh`
+## Development
+
+- Install
+  - `git clone git@github.com:Shelob9/garden-builder-content-template.git`
+  - `cd garden-builder-content-template && yarn`
+- Build from notes and redeploy to Github pages
+  - `yarn garden`
+- Serve the generated HTML on localhost
+  - `yarn start`
+  - [http://localhost:2999](http://localhost:2999) 
