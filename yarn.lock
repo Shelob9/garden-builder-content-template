@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@digital-garden-builder/builder@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@digital-garden-builder/builder/-/builder-0.0.11.tgz#ddcb8c620478a84b4a8fb3a5c1289673458eb203"
-  integrity sha512-E10dEbLMJxTWVzVYCWr4EzQmXsh4mzC+v0J6othcWLdv6lJKHoiOd8GBCyZmE4GUEg0beTVc3Kz+M+eKW2esQQ==
+"@digital-garden-builder/builder@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@digital-garden-builder/builder/-/builder-0.0.12.tgz#486307f1188688970c813402e6248640f349b470"
+  integrity sha512-dEaUDDHvTwuouZD2D+0PeOYM67JBY+91UMaofsWb9FTxGRLSBFZdQu4KGf9wnBbbUIUFlbFftiuJpRCMg9o/9g==
   dependencies:
     shelljs "^0.8.4"
 
