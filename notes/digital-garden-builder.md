@@ -10,5 +10,7 @@ This is also a demo of deploying with Vercel instead of Github pages.
 
 ## Notes Open To The Right
 
+Such as these:
+
 - [[one]]
 - [[markdown]]
